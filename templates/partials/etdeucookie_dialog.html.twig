@@ -1,0 +1,10 @@
+{% extends "partials/etdeucookie.html.twig" %}
+
+{% set etdeucookiecontent %}
+    <div id="etd-cookie-wrppr">
+        <div id="etd-cookie">
+            <div id="etd-cookie-t">{{ config.plugins.etdeucookie.message|nl2br }}</div>
+            <div id="etd-cookie-b"><button type="button" class="btn btn-primary">{{ config.plugins.etdeucookie.button ?: ('PLUGINS.ETDEUCOOKIE.FIELDS.BUTTON.DEFAULT'|t) }}</button></div>
+        </div>
+    </div>
+{% endset %}

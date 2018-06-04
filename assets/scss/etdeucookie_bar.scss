@@ -1,0 +1,37 @@
+/**
+ * Class EtdPopupPlugin
+ * @package Grav\Plugin
+ */
+
+//
+// App
+// ---------------------------------------
+
+// Common
+// --------------------------
+@import "common";
+
+#etd-cookie {
+  position: fixed;
+  z-index: 99999;
+}
+
+#etd-cookie-t {
+  float: left;
+  padding: 5px;
+  width: 85%
+}
+
+#etd-cookie-b {
+  float: left;
+  padding: 5px;
+  width: 15%
+}
+
+@media(max-width:767px) {
+  #etd-cookie-t, #etd-cookie-b {
+    float: none;
+    width: 100%;
+    text-align: center
+  }
+}

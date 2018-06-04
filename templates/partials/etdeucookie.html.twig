@@ -1,0 +1,3 @@
+document.addEventListener("DOMContentLoaded", function(e) {
+    etdeucookie.init("{{ etdeucookiecontent|replace({'\r\n': '', '\n': '', '\r': '', '\"': '\\"'}) }}", 'etd-cookie{% if config.plugins.etdeucookie.type == 'dialog' %}-wrppr{% endif %}');
+});

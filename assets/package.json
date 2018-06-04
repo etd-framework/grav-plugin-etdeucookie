@@ -1,0 +1,31 @@
+{
+  "name": "@etd-framework/grav-plugin-etdeucookie",
+  "version": "0.1.0",
+  "description": "Grav plugin which displays a dialog or a bar",
+  "homepage": "https://github.com/etd-framework/grav-plugin-etdeucookie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etd-framework/grav-plugin-etdeucookie.git"
+  },
+  "scripts": {
+    "css": "npm-run-all --sequential css-compile css-prefix css-uglify",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o css/",
+    "css-prefix": "postcss --config postcss.config.js --replace \"css/*.css\"",
+    "css-uglify": "uglifycss --max-line-len 500 css/etdeucookie_bar.css > css/etdeucookie_bar.min.css & uglifycss --max-line-len 500 css/etdeucookie_dialog.css > css/etdeucookie_dialog.min.css",
+    "js": "npm-run-all --sequential js-uglify",
+    "js-uglify": "uglifyjs js/etdeucookie.js -o js/etdeucookie.min.js -c -m --source-map",
+    "watch": "npm-run-all --parallel watch-css watch-js",
+    "watch-css": "nodemon --ignore js/ -e scss -x \"npm run css\"",
+    "watch-js": "nodemon --ignore scss/ --ignore js/etdeucookie.min.js -e js -x \"npm run js\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.1",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0",
+    "uglifycss": "^0.0.29",
+    "uglify-js": "^3.3.25"
+  }
+}

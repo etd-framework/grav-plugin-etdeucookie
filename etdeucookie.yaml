@@ -1,0 +1,4 @@
+enabled: true
+type: bar
+message: PLUGINS.ETDEUCOOKIE.FIELDS.MESSAGE.DEFAULT
+position: 'top'

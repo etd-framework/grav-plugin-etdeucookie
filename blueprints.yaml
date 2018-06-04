@@ -1,0 +1,65 @@
+name: Etd Eu Cookie
+version: 0.1.0
+description: Grav plugin which displays a dialog or a bar about the cookie policy
+icon: plug
+author:
+  name: ETD Solutions
+  email: dev@etd-solutions.com
+homepage: https://github.com/etd-solutions/grav-plugin-etdeucookie
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/etd-solutions/grav-plugin-etdeucookie/issues
+docs: https://github.com/etd-solutions/grav-plugin-etdeucookie/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.ENABLED.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.ENABLED.HELP
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGINS.ETDEUCOOKIE.FIELDS.ENABLED.OPTIONS.ENABLED
+        0: PLUGINS.ETDEUCOOKIE.FIELDS.ENABLED.OPTIONS.DISABLED
+      validate:
+        type: bool
+    type:
+      type: select
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.TYPE.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.TYPE.HELP
+      classes: fancy
+      default: 'bar'
+      options:
+        'bar': PLUGINS.ETDEUCOOKIE.FIELDS.TYPE.OPTIONS.BAR
+        'dialog': PLUGINS.ETDEUCOOKIE.FIELDS.TYPE.OPTIONS.DIALOG
+    title:
+      type: text
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.TITLE.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.TITLE.HELP
+      validate:
+        type: text
+    message:
+      type: editor
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.MESSAGE.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.MESSAGE.HELP
+      default: PLUGINS.ETDEUCOOKIE.FIELDS.MESSAGE.DEFAULT
+      validate:
+        type: textarea
+    button:
+      type: text
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.BUTTON.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.BUTTON.HELP
+      validate:
+        type: text
+    position:
+      type: select
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.HELP
+      classes: fancy
+      default: 'top'
+      options:
+        'bottom': PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.OPTIONS.BOTTOM
+        'top': PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.OPTIONS.TOP
