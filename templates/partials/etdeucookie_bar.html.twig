@@ -2,7 +2,7 @@
 
 {% set etdeucookiecontent %}
 <div id="etd-cookie">
-    <div id="etd-cookie-t">{{ config.plugins.etdeucookie.message|nl2br }} }}</div>
+    <div id="etd-cookie-t">{{ config.plugins.etdeucookie.message|markdown }} }}</div>
     <div id="etd-cookie-b"><button type="button" class="btn btn-default btn-sm">{{ config.plugins.etdeucookie.button ?: ('PLUGINS.ETDEUCOOKIE.FIELDS.BUTTON.DEFAULT'|t) }}</button></div>
 </div>
 {% endset %}
