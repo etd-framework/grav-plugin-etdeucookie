@@ -2,6 +2,9 @@ fr:
   PLUGINS:
     ETDEUCOOKIE:
       FIELDS:
+        BGCOLOR:
+          LABEL: Couleur de fond
+          HELP: Couleur de fond de la fenêtre.
         BUTTON:
           DEFAULT: "Poursuivre"
           LABEL: Texte du bouton
@@ -22,6 +25,9 @@ fr:
           OPTIONS:
             BOTTOM: En bas
             TOP: En haut
+        TEXTCOLOR:
+          LABEL: Couleur de texte
+          HELP: Couleur de texte de la fenêtre.
         TITLE:
           LABEL: Titre
           HELP: Titre de la popup.

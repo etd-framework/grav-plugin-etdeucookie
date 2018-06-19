@@ -63,3 +63,13 @@ form:
       options:
         'bottom': PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.OPTIONS.BOTTOM
         'top': PLUGINS.ETDEUCOOKIE.FIELDS.POSITION.OPTIONS.TOP
+    bgcolor:
+      type: colorpicker
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.BGCOLOR.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.BGCOLOR.HELP
+      default: '#ffffff'
+    textcolor:
+      type: colorpicker
+      label: PLUGINS.ETDEUCOOKIE.FIELDS.TEXTCOLOR.LABEL
+      help: PLUGINS.ETDEUCOOKIE.FIELDS.TEXTCOLOR.HELP
+      default: '#000000'

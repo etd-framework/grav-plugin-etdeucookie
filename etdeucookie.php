@@ -62,7 +62,10 @@ class ETDEUCookiePlugin extends Plugin
         if ($cookie !== "ok") {
 
             // Retrieve the type.
-            $type = strtolower($this->config->get('plugins.etdeucookie.type'));
+            $type     = strtolower($this->config->get('plugins.etdeucookie.type'));
+            $position = $this->config->get('plugins.etdeucookie.position');
+            $bgcolor  = $this->config->get('plugins.etdeucookie.bgcolor');
+            $color    = $this->config->get('plugins.etdeucookie.textcolor');
 
             if (!preg_grep("/" . $type . "/i", array(
                 "bar",
@@ -73,6 +76,7 @@ class ETDEUCookiePlugin extends Plugin
 
             $this->grav['assets']->addJs('plugin://etdeucookie/assets/js/etdeucookie.min.js');
             $this->grav['assets']->addCss('plugin://etdeucookie/assets/css/etdeucookie_' . $type . '.min.css', -999);
+            $this->grav['assets']->addInlineCss('#etd-cookie{' . $position . ':0;background:' . $bgcolor . ';color:' . $color . ';}', -999);
 
             $twig = $this->grav['twig'];
             $twig->twig_vars['etdeucookie_type'] = $type;

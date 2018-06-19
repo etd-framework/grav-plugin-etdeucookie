@@ -2,3 +2,5 @@ enabled: true
 type: bar
 message: PLUGINS.ETDEUCOOKIE.FIELDS.MESSAGE.DEFAULT
 position: 'top'
+bgcolor: '#ffffff'
+textcolor: '#000000'
