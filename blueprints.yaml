@@ -1,15 +1,15 @@
 name: Etd Eu Cookie
-version: 0.1.0
+version: 0.1.3
 description: Grav plugin which displays a dialog or a bar about the cookie policy
 icon: plug
 author:
   name: ETD Solutions
   email: dev@etd-solutions.com
-homepage: https://github.com/etd-solutions/grav-plugin-etdeucookie
-demo: http://demo.yoursite.com
+homepage: https://github.com/etd-framework/grav-plugin-etdeucookie
+demo: https://github.com/etd-framework/grav-plugin-etdeucookie
 keywords: grav, plugin, etc
-bugs: https://github.com/etd-solutions/grav-plugin-etdeucookie/issues
-docs: https://github.com/etd-solutions/grav-plugin-etdeucookie/blob/develop/README.md
+bugs: https://github.com/etd-framework/grav-plugin-etdeucookie/issues
+docs: https://github.com/etd-framework/grav-plugin-etdeucookie/blob/develop/README.md
 license: MIT
 
 form:
