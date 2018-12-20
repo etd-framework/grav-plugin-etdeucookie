@@ -59,7 +59,7 @@ class ETDEUCookiePlugin extends Plugin
         $cookie = isset($_COOKIE['etdeucookie']) ? (string) $_COOKIE['etdeucookie'] : '';
 
         // If the cookie has not been accepted yet.
-        if ($cookie !== "ok") {
+        if ($cookie !== "ok"  && !isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Google Page Speed Insights') === false) {
 
             // Retrieve the type.
             $type     = strtolower($this->config->get('plugins.etdeucookie.type'));
